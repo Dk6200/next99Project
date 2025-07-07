@@ -8,7 +8,7 @@ const Canvas = ({ canvas, onWidgetSelect }) => {
   const [zoom, setZoom] = useState(1)
   const [showGrid, setShowGrid] = useState(true)
   const [isFullscreen, setIsFullscreen] = useState(false)
-  const canvasRef = useRef(null)
+  const canvasRef =  useRef(null)
 
   const handleZoomIn = () => {
     setZoom((prev) => Math.min(prev + 0.1, 2))
